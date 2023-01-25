@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!--font awesome-->
+		<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+		<!--goggle font-->
+		<link href="https://fonts.googleapis.com/css?family=Candal|Lora"rel="stylesheet">
+
+		<!--custom styling-->
+		<link rel="stylesheet" type="text/css" href="../../css/style.css">
+     
+     <!--admin styling-->
+    <link rel="stylesheet" type="text/css" href="../../css/admin.css">
+	<title>Admin section - Add User</title>
+	</head>
+
+	<body>
+		
+
+		<header>
+			<div class="logo">
+				<h1 class="logo-text">Michael <span>Inspires</span></h1>
+			</div>
+			<i class="fa fa-bars menu-toggle"></i>
+            <ul class="nav">
+            	<li><a href="#">
+            		<i class="fa fa-user"></i>
+            	Michael Kopoi
+            	<i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+            </a>
+                  <ul>
+                  
+            	<li><a href="#" class="logout">Logout</a></li>
+
+                  </ul>
+
+            	</li>
+            							
+            </ul>
+		</header>
+         <!--start admin page wrapper-->
+             <div class="admin-wrapper">
+            
+           		  <!--left sidebar-->
+                    <div class="left-sidebar">
+                      <ul>
+                        <li><a href="../posts/index.html">Add Topic</a></li>
+                         <li><a href="index.html">Manage Users</a></li>
+                          <li><a href="../topics/index.html">Manage Topics</a></li>
+                      </ul>
+
+                    </div>
+
+                 <!--left sidebar-->
+                       
+                        <!--admin content-->
+
+                     <div class="admin-content">
+                      <div class="button-group">
+                        <a href="create.html" class="btn btn-big">Add User</a>
+                         <a href="index.html" class="btn btn-big">Manage Users</a>
+                      </div>
+
+                      <div class="content">
+                        <h2 class="page-title">Add User</h2>
+
+                       <form action="create.html" method="post">
+                         <div>
+                         <label>Username:</label>
+                         <input type="text" name="username" class="text-input">
+                         </div>
+
+                      <div>
+                      <label>Email:</label>
+                       <input type="email" name="email" class="text-input">
+                       </div>
+
+                       <div>
+                     <label>Password:</label>
+                     <input type="password" name="password" class="text-input">
+                     </div>
+
+                     <div>
+                    <label>Confirm Password:</label>
+                    <input type="repassword" name="repassword" class="text-input">
+                    </div>
+
+                           <div>
+                          <label>Role</label>
+                           <select name="role" class="text-input">
+                             <option value="author">Author</option>
+                               <option value="admin">Admin</option>
+                           </select>
+                         </div>
+
+                           <div>
+                        <button type="submit" class="btn btn-big">Add User</button>
+                         </div>
+                       </form>
+                      </div>
+
+                    </div>
+
+                         <!--admin content-->
+     
+                </div>
+
+
+            
+
+
+
+
+         
+
+
+           			
+
+            
+         <!--end of admin wrapper-->
+
+        
+
+		<!--jQuery-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      
+      <!--ckeditor-->
+      <script src="https://cdn.ckeditor.com/ckeditor5/21.0.0/classic/ckeditor.js"></script>
+		<!--custom script-->
+		<script src="../../js/script.js"></script>
+	</body>
+</html>
